@@ -141,6 +141,8 @@ namespace REPASO2
         {
             Reportecs reporte = new Reportecs();
             int mayor = alquiler.Max(al =>al.Km);
+            string variable = mayor.ToString();
+            labelKM.Text = variable;
 
             for (int i = 0; i < alquiler.Count; i++)
             {

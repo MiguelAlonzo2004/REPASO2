@@ -136,13 +136,14 @@ namespace REPASO2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Reportecs reporte = new Reportecs();
+  
             int mayor = alquiler.Max(al =>al.Km);
             string variable = mayor.ToString();
             labelKM.Text = variable;
 
             for (int i = 0; i < alquiler.Count; i++)
             {
+                Reportecs reporte = new Reportecs();
                 for (int j = 0; j < clientes.Count; j++)
                 {
                     if(alquiler[i].Nit == clientes[j].Nit)
@@ -161,8 +162,9 @@ namespace REPASO2
 
                     }
                 }
+                reportes.Add(reporte);
             }
-            reportes.Add(reporte);
+            
             Mostrar3();
         }
     }

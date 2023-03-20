@@ -136,7 +136,6 @@ namespace REPASO2
 
         private void button2_Click(object sender, EventArgs e)
         {
-  
             int mayor = alquiler.Max(al =>al.Km);
             string variable = mayor.ToString();
             labelKM.Text = variable;

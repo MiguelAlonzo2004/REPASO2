@@ -72,9 +72,6 @@ namespace REPASO2
 
             Leer2();
             Mostrar2();
-
-            Leer3();
-            Mostrar3();
         }
         private void Leer2()
         {
@@ -165,6 +162,8 @@ namespace REPASO2
                     }
                 }
             }
+            reportes.Add(reporte);
+            Mostrar3();
         }
     }
 }
